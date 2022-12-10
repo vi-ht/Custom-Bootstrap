@@ -1,0 +1,198 @@
+:root{
+    --green: #198754;
+}
+@font-face {
+    src: url("font/Lora-SemiBold.ttf");
+    font-family: Lora-SemiBold;
+}
+
+@font-face {
+    src: url("font/Lora-Bold.ttf");
+    font-family: Lora-Bold;
+}
+
+.square {
+    width: 55vw;
+    height: 50vw;
+    background-color: rgba(37, 114, 81, 0.06);
+    border-radius: 10vw;
+    transform: rotate(30deg);
+    z-index: -1;
+}
+
+.small {
+    width: 40vw;
+    height: 40vw;
+    transform: skewX(20deg);
+}
+
+.medium {
+    width: 45vw;
+    height: 45vw;
+    transform: skewX(340deg);
+}
+
+.circle {
+    width: 40vw;
+    height: 40vw;
+    background-color: rgba(37, 114, 81, 0.06);
+    border-radius: 50%;
+    transform: rotate(30deg);
+    z-index: -1;
+
+}
+
+.title {
+    font-size: 4rem;
+    font-family: Lora-SemiBold !important;
+}
+
+#help, .nav-item {
+    font-family: Lora-SemiBold !important;
+}
+
+#help-part {
+    background-color: rgba(37, 114, 81, 0.06);
+}
+
+.content {
+    color: gray;
+    font-size: 1.1rem;
+}
+
+button, #inputPassword2 {
+    font-size: 1.1rem !important;
+}
+
+.onNavBtn {
+    font-size: 1rem !important;
+}
+
+.btn-signup {
+    margin-left: -1rem;
+}
+
+.main-card, .navbar {
+    box-shadow: 4px 4px 4px 0 rgba(37, 114, 81, 0.06), 4px 6px 20px 0 rgba(37, 114, 81, 0.06);
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.underline {
+    position: absolute;
+    transform: skewX(350deg);
+}
+
+.text {
+    z-index: 1;
+}
+
+#underline-1 {
+    width: 220px;
+    height: 13px;
+    bottom: 3px;
+    right: 110px;
+    z-index: -1;
+}
+
+#underline-2 {
+    width: 150px;
+    height: 13px;
+    bottom: 0px;
+    left: 0;
+    z-index: 0;
+    background-color: #FBE122;
+}
+
+#underline-3 {
+    width: 300px;
+    height: 13px;
+    bottom: 2px;
+    right: 0;
+    z-index: 0;
+}
+
+#underline-4 {
+    width: 125px;
+    height: 13px;
+    bottom: 2px;
+    left: 0;
+    z-index: 0;
+    background-color: #448BCA;
+}
+
+#underline-5 {
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    bottom: 2px;
+    border-radius: 5px;
+    left: 0;
+    z-index: 0;
+}
+
+.hover-underline {
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    bottom: 2px;
+    border-radius: 5px;
+    left: 0;
+    z-index: 0;
+    transition: 0.5s ease-in-out;
+    background-color: #FBE122;
+}
+
+/*Custom scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(37, 114, 81, 0.06)
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #198754;
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FBE122;
+}
+
+/*test anim*/
+#main-background {
+    position: relative;
+    left: 100px;
+    transition: all 0.7s ease-out;
+}
+
+#main-content {
+    position: relative;
+    right: 100px;
+    transition: all 0.7s ease-out;
+}
+
+/*button hover*/
+.full-btn:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #198754;
+    color: #198754;
+    transition: 0.5s;
+}
+
+.outline-btn:hover {
+    background-color: var(--green);
+    border: 1px solid #198754;
+    color: #fff;
+    transition: 0.5s;
+}

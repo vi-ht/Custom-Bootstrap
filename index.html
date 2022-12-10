@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Web title and favicon-->
+    <title>Nature - Landing</title>
+    <link rel="icon" type="text/css" href="asset/web-icon/Web-icon.png">
+
+    <!--Author information-->
+    <meta name="Author" content="Huynh Thanh Vi">
+    <meta name="Version" content="1.0">
+    <meta name="Start-day" content="12/10/2011">
+
+    <!--Set up scale for viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link preview-->
+    <meta property="og:title" content="Nature - Landing">
+    <meta property="og:description" content="Nature">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="ASSET/Preview.png">
+
+    <!--import bootstraps file-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--import my CSS file-->
+    <link rel="stylesheet" href="css/myStyle.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-sm bg-white">
+            <div class="container-lg ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="asset/web-icon/Web-icon.png"
+                        style="width:40px;height:40px;"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-4 ms-4 position-relative">
+                            <a class="nav-link active fw-bold text-success" aria-current="page" href="#">Home</a>
+                            <div id="underline-5" class="bg-success"></div>
+                        </li>
+                        <li class="nav-item me-4 ms-2 position-relative ">
+                            <a class="nav-link fw-bold" href="#">About</a>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li class="nav-item me-4 ms-2 position-relative">
+                            <a class="nav-link fw-bold" href="#">Contact</a>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link fw-bold">Help</a>
+                            <div class="hover-underline"></div>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-success me-2 pe-4 ps-4 fw-bold onNavBtn full-btn" type="submit">Start free
+                            trial</button>
+                        <button class="btn btn-outline-success pe-4 ps-4 fw-bold onNavBtn outline-btn" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </nav> <!--End navbar-->
+    </header> <!--End header-->
+    <main class="container">
+        <div class="square position-absolute end--10 top--10"></div>
+        <div class="circle position-absolute start--20 top-100"></div>
+        <div class="circle position-absolute start-15 top-250"></div>
+        <div class="square medium position-absolute end--10 top-170"></div>
+        <div class="square small position-absolute start-45 top-350"></div>
+        <section class="container-fluid row mt-6">
+            <div class="col-6 mt-55" id="main-content">
+                <p class="text-bg-vi w-100 title lh-1 w-90">Think positive</p>
+                <div class="position-relative">
+                    <p class="text-bg-vi w-100 title lh-1 w-90">about our Climate</p>
+                    <div id="underline-1" class="bg-success underline"></div>
+                </div>
+                <hr class="mt-4 mb-4 w-90" />
+                <p class="mt-4 mb-4 content w-90">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget maecenas eget sit et rhoncus.
+                    Sit consectetur.
+                </p>
+                <form class="row g-3 w-90 mt-2">
+                    <div class="col-8">
+                        <input type="password" class="form-control w-100 p-3" id="inputPassword2"
+                            placeholder="name@company.com">
+                    </div>
+                    <div class="col-4 btn-signup">
+                        <button type="submit" class="btn btn-success w-100 p-3 fw-bold full-btn">Signup</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6 img" id="main-background"><img class="w-100 main-card" src="asset/banner/imageView.png">
+            </div>
+        </section>
+        <section class="container-fluid row mt-4 ">
+            <div class="col-8 mt-55 bg-white rounded p-5 main-card">
+                <div class="position-relative">
+                    <p class="text-bg-vi w-100 title lh-1 position-relative text">Plant a tree</p>
+                    <div id="underline-2" class="underline"></div>
+                </div>
+                <p class="mt-4 mb-3 content w-75">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget maecenas eget sit et rhoncus.
+                    Sit consectetur.
+                </p>
+                <button type="submit" class="btn btn-success p-2-5 ps-5 pe-5 mb-3 fw-bold full-btn">Find out</button>
+                <div class="banner-medium"><img class="w-100" src="asset/banner/vertical-banner.png"></div>
+            </div>
+        </section>
+        <section class="container-fluid row mt-4 ">
+            <div class="col-4"></div>
+            <div class="col-8 mt-55 bg-white rounded p-5 text-end main-card">
+                <div class="position-relative">
+                    <p class="text-bg-vi w-100 title lh-1 w-90 position-relative text">Live sustainably</p>
+                    <div id="underline-3" class="underline bg-success"></div>
+                </div>
+
+                <p class="mt-4 mb-3 content w-75 position-relative" style="left:200px">
+                    As well as making changes as an individual, you can join others to bring about bigger change. Right
+                    now communities across the country are fighting climate breakdown. See what's going on in your area.
+                </p>
+                <button type="submit" class="btn btn-success p-2-5 ps-5 pe-5 mb-3 fw-bold full-btn">Donate now</button>
+                <div class="banner-medium"><img class="w-100" src="asset/banner/vertical-banner-2.png"></div>
+            </div>
+        </section>
+        <section class="container-fluid row mt-4">
+            <div class="col-8 mt-55 bg-white rounded p-5 main-card">
+                <div class="position-relative">
+                    <p class="text-bg-vi w-100 title lh-1 position-relative text">Save energy at home</p>
+                    <div id="underline-4" class="underline"></div>
+                </div>
+                <p class="mt-4 mb-3 content w-75">
+                    If you're wondering what you can do about climate change and nature loss, look no further.
+                </p>
+                <button type="submit" class="btn btn-success p-2-5 ps-5 pe-5 mb-3 fw-bold full-btn">Join the cause</button>
+                <div class="banner-medium"><img class="w-100" src="asset/banner/vetical-banner-3.png"></div>
+            </div>
+        </section>
+    </main>
+    <section class="container-fluid mt-5" id="help-part">
+        <section class="container p-5">
+            <h1 class="text-bg-vi w-100 lh-1 ">How to help</h1>
+            <p class="mt-4 mb-3 content w-75 lh-1">
+                Our goal is a world of net zero carbon emissions by 2050, with greater prosperity for all.
+            </p>
+        </section>
+    </section>
+    <script type="text/javascript">
+        var navList = document.getElementsByClassName("nav-link");
+        for (let i = 0; i < navList.length; i++) {
+            if (i !== 0) {
+                navList[i].addEventListener("mouseover", (e) => {
+                    e.preventDefault();
+                    navList[i].parentNode.childNodes[3].style.width = i === 1 ? "60px" : i === 2 ? "70px" : "48px";
+                })
+                navList[i].addEventListener("mouseout", (e) => {
+                    e.preventDefault();
+                    navList[i].parentNode.childNodes[3].style.width = "0";
+                })
+            }
+        }
+        document.body.addEventListener("load", onLoad())
+        function onLoad() {
+            document.getElementById("main-background").style.left = 0;
+            document.getElementById("main-content").style.right = 0;
+        }
+        window.addEventListener("scroll", (e) => {
+            e.preventDefault();
+            var scrollCordinate = this.scrollY;
+            if (scrollCordinate > 0) {
+                
+            }
+
+
+        })
+    </script>
+
+</body>
+
+</html>
