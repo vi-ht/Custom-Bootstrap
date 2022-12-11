@@ -11,6 +11,11 @@
     font-family: Lora-Bold;
 }
 
+@font-face {
+    src: url("font/Lora-Regular.ttf");
+    font-family: Lora-Regular;
+}
+
 .square {
     width: 55vw;
     height: 50vw;
@@ -47,8 +52,11 @@
     font-family: Lora-SemiBold !important;
 }
 
-#help, .nav-item {
+#help {
     font-family: Lora-SemiBold !important;
+}
+.nav-item {
+    font-family: Lora-Regular !important;
 }
 
 #help-part {
@@ -80,6 +88,11 @@ html {
     width: 100vw;
     overflow-x: hidden;
 }
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 
 .underline {
     position: absolute;
@@ -195,4 +208,75 @@ html {
     border: 1px solid #198754;
     color: #fff;
     transition: 0.5s;
+}
+
+/*Responsive*/
+@media screen and (max-width: 567px) {
+    #first-sec{
+        margin-top: 30vw;
+    }
+    .main-card{
+        margin-top: 3rem;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #first-sec{
+        margin-top: 10vw;
+    }
+    .main-card{
+        margin-top: 3rem;
+    }
+    .title {
+        font-size: 2.8rem;
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #first-sec{
+        margin-top: 10vw;
+    }
+    .main-card{
+        margin-top: 3rem;
+    }
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #first-sec{
+        margin-top: 9vw;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    #main-content{
+        margin-top: 3vw !important;
+    }
+    
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    #first-sec{
+        margin-top: 8.5vw;
+    }
+    #main-content{
+        margin-top: 3.5vw !important;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1500px)  {
+    #first-sec{
+        margin-top: 8vw;
+    }
+    #main-content{
+        margin-top: 4.5vw !important;
+    }
+}
+@media screen and (min-width: 1500px) {
+    #first-sec{
+        margin-top: 8.3vw;
+    }
+    #main-content{
+        margin-top: 4.5vw !important;
+    }
 }
