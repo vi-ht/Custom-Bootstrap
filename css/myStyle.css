@@ -16,6 +16,13 @@
     font-family: Lora-Regular;
 }
 
+#btn-close{
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
 .square {
     width: 55vw;
     height: 50vw;
