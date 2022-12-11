@@ -218,15 +218,24 @@ body {
 }
 
 /*Responsive*/
+#first-sec{
+    margin-left: 6px;
+}
 @media screen and (max-width: 567px) {
     #first-sec{
-        margin-top: 30vw;
+        margin-top: 10vw;
+    }
+    .content {
+        font-size: 1rem;
     }
     .main-card{
         margin-top: 3rem;
     }
     .title {
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+    #inputPassword2, .full-btn{
+        padding: 10px !important;
     }
     
 }
@@ -238,13 +247,13 @@ body {
         margin-top: 3rem;
     }
     .title {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
     
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #first-sec{
-        margin-top: 10vw;
+        margin-top: 7vw;
     }
     .main-card{
         margin-top: 3rem;
@@ -281,7 +290,7 @@ body {
 }
 @media screen and (min-width: 1500px) {
     #first-sec{
-        margin-top: 8.3vw;
+        margin-top: 5vw;
     }
     #main-content{
         margin-top: 4.5vw !important;
