@@ -16,12 +16,17 @@ function onLoad() {
     document.getElementById("main-background").style.left = 0;
     document.getElementById("main-content").style.right = 0;
 }
-window.addEventListener("scroll", (e) => {
-    e.preventDefault();
-    var scrollCordinate = this.scrollY;
-    if (scrollCordinate > 0) {
-
+window.addEventListener("scroll", () => {
+    var scrollY = this.scrollY;
+    // document.getElementById("test").innerText = scrollY;
+    if(scrollY>250 && scrollY<900){
+        document.getElementById("plant-a-tree").style.right = 0;
+    }else if(scrollY>=900 && scrollY< 1750){
+        document.getElementById("live-sustainably").style.left = 0;
+    } else if(scrollY>=1750){
+        document.getElementById("save-energy").style.right = 0;
+        
     }
-
+    
 
 })

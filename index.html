@@ -44,7 +44,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item me-4 ms-4 position-relative">
-                            <a class="nav-link active fw-bold text-success" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active fw-bold text-success" aria-current="page" href="#" id="test">Home</a>
                             <div id="underline-5" class="bg-success"></div>
                         </li>
                         <li class="nav-item me-4 ms-2 position-relative ">
@@ -70,8 +70,8 @@
                 </div>
             </div>
         </nav> <!--End navbar-->
-        <div class="container-sm d-flex justify-content-between mt-4">
-            <button class="btn btn-primary fw-bold d-block d-md-none" type="button" data-bs-toggle="offcanvas"
+        <div class="container-sm d-flex justify-content-between mt-4 d-block d-md-none">
+            <button class="btn btn-primary fw-bold " type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" id="btn-close">
                 <iconify-icon icon="iconoir:menu-scale" width="30" height="30"
                     class="text-success fw-bold"></iconify-icon>
@@ -80,7 +80,7 @@
                     style="width:40px;height:40px;"></a>
         </div>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        <div class="offcanvas offcanvas-start d-block d-md-none w-50" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <a class="navbar-brand" href="index.html"><img src="asset/web-icon/Web-icon.png"
@@ -89,21 +89,29 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item position-relative">
-                        <a class="nav-link active fw-bold text-success" aria-current="page" href="#">Home</a>
-                        <div id="underline-5" class="bg-success"></div>
+                    <li class="outside active mb-1 rounded nav-item position-relative d-flex justify-content-start align-items-baseline"> 
+                        <iconify-icon class="icon text-success" icon="material-symbols:home-outline-rounded" width="24" height="24"></iconify-icon>
+                        <a class="nav-link active fw-bold text-success ps-3" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item position-relative ">
-                        <a class="nav-link" href="#">About</a>
-                        <div class="hover-underline"></div>
+                    <li class="mb-1 rounded nav-item position-relative d-flex justify-content-start align-items-baseline">
+                        <iconify-icon class="icon" icon="mdi:about-circle-outline" width="24" height="24"></iconify-icon>
+                        <a class="nav-link ps-3" href="#">About Us</a>
                     </li>
-                    <li class="nav-item position-relative">
-                        <a class="nav-link" href="#">Contact</a>
-                        <div class="hover-underline"></div>
+                    <li class="mb-1 rounded nav-item position-relative d-flex justify-content-start align-items-baseline">
+                        <iconify-icon class="icon" icon="material-symbols:connect-without-contact" width="24" height="24"></iconify-icon>
+                        <a class="nav-link ps-3" href="#">Contact</a>
                     </li>
-                    <li class="nav-item position-relative">
-                        <a class="nav-link">Help</a>
-                        <div class="hover-underline"></div>
+                    <li class="mb-1 rounded nav-item position-relative d-flex justify-content-start align-items-baseline">
+                        <iconify-icon class="icon" icon="material-symbols:help-outline" width="24" height="24"></iconify-icon>
+                        <a class="nav-link ps-4">Help</a>
+                    </li>
+                    <li class="mb-1 rounded nav-item position-relative d-flex justify-content-start align-items-baseline">
+                        <iconify-icon class="icon" icon="material-symbols:new-releases" width="24" height="24"></iconify-icon>
+                        <a class="nav-link ps-4">Start free trial</a>
+                    </li>
+                    <li class="mb-1 rounded nav-item position-relative d-flex justify-content-start align-items-baseline">
+                        <iconify-icon class="icon" icon="material-symbols:group-add-outline" width="24" height="24"></iconify-icon>
+                        <a class="nav-link ps-4">Sign up</a>
                     </li>
                 </ul>
             </div>
@@ -115,11 +123,13 @@
         <div class="circle position-absolute start-15 top-250"></div>
         <div class="square medium position-absolute end--10 top-170"></div>
         <div class="square small position-absolute start-45 top-350"></div> -->
-        <section class="container-fluid row w-100" id="first-sec">
+        <section class="container-fluid row w-100 h-100" id="first-sec">
             <div class="col-12 col-lg-6" id="main-content">
                 <p class="text-bg-vi w-100 title lh-1 w-90">Think positive</p>
                 <div class="position-relative">
-                    <p class="text-bg-vi w-100 title lh-1 w-90">about our Climate</p>
+                    <p class="text-bg-vi w-100 title lh-1 w-90 d-none d-sm-block">about our Climate</p>
+                    <p class="text-bg-vi w-100 title lh-1 w-90 d-block d-sm-none">about our</p>
+                    <p class="text-bg-vi w-100 title lh-1 w-90 d-block d-sm-none">Climate</p>
                     <div id="underline-1" class="bg-success underline"></div>
                 </div>
                 <hr class="mt-4 mb-4 w-90" />
@@ -142,7 +152,7 @@
             </div>
         </section>
         <section class="container-fluid row mt-4 ">
-            <div class="col-12 col-lg-8 mt-55 bg-white rounded p-5 main-card">
+            <div class="col-12 col-lg-8 mt-55 bg-white rounded p-5 main-card" id="plant-a-tree">
                 <div class="position-relative">
                     <p class="text-bg-vi w-100 title lh-1 position-relative text">Plant a tree</p>
                     <div id="underline-2" class="underline"></div>
@@ -157,13 +167,13 @@
         </section>
         <section class="container-fluid row mt-4 ">
             <div class="col-4 d-none d-lg-block"></div>
-            <div class="col-12 col-lg-8 mt-55 bg-white rounded p-5 text-end main-card">
+            <div class="col-12 col-lg-8 mt-55 bg-white rounded p-5 text-end main-card" id="live-sustainably">
                 <div class="position-relative">
                     <p class="text-bg-vi w-100 title lh-1 w-90 position-relative text">Live sustainably</p>
                     <div id="underline-3" class="underline bg-success"></div>
                 </div>
 
-                <p class="mt-4 mb-3 content w-75 position-relative" style="left:200px">
+                <p class="mt-4 mb-3 content" >
                     As well as making changes as an individual, you can join others to bring about bigger change. Right
                     now communities across the country are fighting climate breakdown. See what's going on in your area.
                 </p>
@@ -172,7 +182,7 @@
             </div>
         </section>
         <section class="container-fluid row mt-4">
-            <div class="col-12 col-lg-8 mt-55 bg-white rounded p-5 main-card">
+            <div class="col-12 col-lg-8 mt-55 bg-white rounded p-5 main-card" id="save-energy">
                 <div class="position-relative">
                     <p class="text-bg-vi w-100 title lh-1 position-relative text">Save energy at home</p>
                     <div id="underline-4" class="underline"></div>

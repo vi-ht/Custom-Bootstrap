@@ -1,6 +1,7 @@
-:root{
+:root {
     --green: #198754;
 }
+
 @font-face {
     src: url("font/Lora-SemiBold.ttf");
     font-family: Lora-SemiBold;
@@ -16,11 +17,11 @@
     font-family: Lora-Regular;
 }
 
-#btn-close{
+#btn-close {
     width: 50px;
     height: 40px;
     border: none;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .square {
@@ -62,9 +63,10 @@
 #help {
     font-family: Lora-SemiBold !important;
 }
-.nav-item {
+
+/* .nav-item {
     font-family: Lora-Regular !important;
-}
+} */
 
 #help-part {
     background-color: rgba(37, 114, 81, 0.06);
@@ -95,6 +97,7 @@ html {
     width: 100vw;
     overflow-x: hidden;
 }
+
 body {
     width: 100%;
     overflow-x: hidden;
@@ -165,6 +168,15 @@ body {
     transition: 0.5s ease-in-out;
     background-color: #FBE122;
 }
+.outside{
+    background-color: rgba(37, 114, 81, 0.06);
+}
+.icon{
+    position: relative;
+    top: 5px;
+    color: gray;
+    left: 10px;
+}
 
 /*Custom scrollbar*/
 /* width */
@@ -190,13 +202,13 @@ body {
 }
 
 /*test anim*/
-#main-background {
+#main-background, #live-sustainably {
     position: relative;
     left: 100px;
     transition: all 0.7s ease-out;
 }
 
-#main-content {
+#main-content, #plant-a-tree, #save-energy {
     position: relative;
     right: 100px;
     transition: all 0.7s ease-out;
@@ -218,81 +230,110 @@ body {
 }
 
 /*Responsive*/
-#first-sec{
+#first-sec {
     margin-left: 6px;
+    margin-top: 10%;
 }
+
 @media screen and (max-width: 567px) {
-    #first-sec{
+    #first-sec {
         margin-top: 10vw;
     }
+
     .content {
         font-size: 1rem;
     }
-    .main-card{
+
+    .main-card {
         margin-top: 3rem;
     }
+
     .title {
         font-size: 3rem;
     }
-    #inputPassword2, .full-btn{
+
+    #inputPassword2, .full-btn {
         padding: 10px !important;
     }
-    
+    #offcanvasExample{
+        width: 73% !important;
+    }
+
 }
+
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    #first-sec{
+    #first-sec {
         margin-top: 10vw;
     }
-    .main-card{
+
+    .main-card {
         margin-top: 3rem;
     }
+
     .title {
         font-size: 3rem;
     }
-    
+
 }
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    #first-sec{
-        margin-top: 7vw;
+    #first-sec {
+        margin-top: 15vw;
     }
-    .main-card{
+    .main-card {
         margin-top: 3rem;
     }
-    
+
 }
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    #first-sec{
-        margin-top: 9vw;
+    #first-sec {
+        margin-top: 15%;
     }
     .title {
         font-size: 3rem;
     }
-    #main-content{
+
+    #main-content {
         margin-top: 3vw !important;
     }
-    
-}
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-    #first-sec{
-        margin-top: 8.5vw;
+    @media screen and (max-height: 650px) {
+        #first-sec {
+            margin-top: 10%;
+        }
     }
-    #main-content{
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    #first-sec {
+        margin-top: 15%;
+    }
+    
+    @media screen and (max-height: 700px) {
+        #first-sec {
+            margin-top: 10%;
+        }
+    }
+    #main-content {
         margin-top: 3.5vw !important;
     }
 }
-@media screen and (min-width: 1400px) and (max-width: 1500px)  {
-    #first-sec{
-        margin-top: 8vw;
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+    @media screen and (max-height: 700px) {
+        #first-sec {
+            margin-top: 8%;
+        }
     }
-    #main-content{
+    #main-content {
         margin-top: 4.5vw !important;
     }
 }
+
 @media screen and (min-width: 1500px) {
-    #first-sec{
-        margin-top: 5vw;
-    }
-    #main-content{
+
+    #main-content {
         margin-top: 4.5vw !important;
     }
 }
