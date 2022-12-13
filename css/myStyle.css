@@ -40,8 +40,8 @@
 }
 
 .medium {
-    width: 45vw;
-    height: 45vw;
+    width: 35vw;
+    height: 35vw;
     transform: skewX(340deg);
 }
 
@@ -258,6 +258,38 @@ body {
     #offcanvasExample{
         width: 73% !important;
     }
+    .square {
+        width: 55vh;
+        height: 55vh;
+        top: -3vh !important;
+        right: -20vh !important;
+    }
+    
+    .small {
+        width: 60vh;
+        height: 60vh;
+        top: 72% !important;
+        right: -0% !important;
+    }
+    
+    .medium {
+        width: 35vh;
+        height: 35vh;
+        top: 38% !important;
+        right: -30% !important;
+    }
+    
+    .circle {
+        width: 45vh;
+        height: 45vh;  
+    }
+
+    .bottom{
+        top: 51% !important;
+        left:-10vh !important;
+        width: 60vh;
+        height: 60vh; 
+    }
 
 }
 
@@ -273,7 +305,38 @@ body {
     .title {
         font-size: 3rem;
     }
+    .square {
+        width: 80vw;
+        height: 80vw;
+        top: -2% !important;
+        right: -30% !important;
+    }
+    
+    .small {
+        width: 60vw;
+        height: 60vw;
+        top: 72% !important;
+        right: -0% !important;
+    }
+    
+    .medium {
+        width: 50vw;
+        height: 50vw;
+        top: 37% !important;
+        right: -30% !important;
+    }
+    
+    .circle {
+        width: 60vw;
+        height: 60vw;  
+    }
 
+    .bottom{
+        top: 51% !important;
+        left:-2% !important;
+        width: 80vw;
+        height: 80vw; 
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -282,6 +345,31 @@ body {
     }
     .main-card {
         margin-top: 3rem;
+    }
+    .square {
+        width: 80vw;
+        height: 80vw;
+        top: -5% !important;
+        right: -30% !important;
+    }
+    
+    .small {
+        width: 55vw;
+        height: 55vw;
+        top: 72% !important;
+        right: -0% !important;
+    }
+    
+    .medium {
+        width: 40vw;
+        height: 40vw;
+        top: 32% !important;
+        right: -30% !important;
+    }
+    
+    .circle {
+        width: 55vw;
+        height: 55vw;  
     }
 
 }
@@ -302,6 +390,7 @@ body {
             margin-top: 10%;
         }
     }
+
 
 }
 
