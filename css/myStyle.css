@@ -93,6 +93,12 @@ button, #inputPassword2 {
     box-shadow: 4px 4px 4px 0 rgba(37, 114, 81, 0.06), 4px 6px 20px 0 rgba(37, 114, 81, 0.06);
 }
 
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
 html {
     width: 100vw;
     overflow-x: hidden;
@@ -168,10 +174,12 @@ body {
     transition: 0.5s ease-in-out;
     background-color: #FBE122;
 }
-.outside{
+
+.outside {
     background-color: rgba(37, 114, 81, 0.06);
 }
-.icon{
+
+.icon {
     position: relative;
     top: 5px;
     color: gray;
@@ -231,14 +239,20 @@ body {
 
 /*Responsive*/
 #first-sec {
-    margin-left: 6px;
     margin-top: 10%;
+    margin-left: 6px;
+}
+
+main>section {
+    margin-left: 6px;
 }
 
 @media screen and (max-width: 567px) {
     #first-sec {
-        margin-top: 10vw;
+        margin-top: 11vh;
     }
+
+
 
     .content {
         font-size: 1rem;
@@ -249,53 +263,95 @@ body {
     }
 
     .title {
-        font-size: 3rem;
+        font-size: 3.15rem;
     }
 
     #inputPassword2, .full-btn {
         padding: 10px !important;
     }
-    #offcanvasExample{
+
+    .full-btn {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    #offcanvasExample {
         width: 73% !important;
     }
+
+    /*relative position of all model on background*/
     .square {
         width: 55vh;
         height: 55vh;
         top: -3vh !important;
         right: -20vh !important;
     }
-    
+
     .small {
         width: 60vh;
         height: 60vh;
         top: 72% !important;
         right: -0% !important;
     }
-    
+
     .medium {
         width: 35vh;
         height: 35vh;
         top: 38% !important;
         right: -30% !important;
     }
-    
+
     .circle {
         width: 45vh;
-        height: 45vh;  
+        height: 45vh;
     }
 
-    .bottom{
+    .bottom {
         top: 51% !important;
-        left:-10vh !important;
+        left: -10vh !important;
         width: 60vh;
-        height: 60vh; 
+        height: 60vh;
     }
 
+    /*padding of main card of page*/
+    .mobile-div {
+        padding: 30px !important;
+    }
+
+    .mobile-div>p, #first-sec>div>form {
+        width: 100% !important;
+    }
+
+    #first-sec>div>form {
+        width: 105% !important;
+    }
+
+    /*underline position*/
+
+    #underline-1 {
+        width: 168px;
+        height: 13px;
+        bottom: 2px;
+        left: 0px;
+    }
+
+    #underline-2 {
+        width: 110px;
+    }
+
+    #underline-3 {
+        width: 235px;
+    }
+
+    #underline-4 {
+        top: 37px;
+        width: 97px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
     #first-sec {
-        margin-top: 10vw;
+        margin-top: 14vw;
     }
 
     .main-card {
@@ -303,39 +359,71 @@ body {
     }
 
     .title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
+
+    /*padding of main card of page*/
+    .mobile-div {
+        padding: 35px !important;
+    }
+
+    .mobile-div>p, #first-sec>div>form {
+        width: 100% !important;
+    }
+
+    /*relative position of all model on background*/
     .square {
         width: 80vw;
         height: 80vw;
         top: -2% !important;
         right: -30% !important;
     }
-    
+
     .small {
         width: 60vw;
         height: 60vw;
         top: 72% !important;
         right: -0% !important;
     }
-    
+
     .medium {
         width: 50vw;
         height: 50vw;
         top: 37% !important;
         right: -30% !important;
     }
-    
+
     .circle {
         width: 60vw;
-        height: 60vw;  
+        height: 60vw;
     }
 
-    .bottom{
+    .bottom {
         top: 51% !important;
-        left:-2% !important;
+        left: -2% !important;
         width: 80vw;
-        height: 80vw; 
+        height: 80vw;
+    }
+
+    /*underline position*/
+
+    #underline-1 {
+        width: 195px;
+        bottom: 2px;
+        right: 27px;
+    }
+
+    #underline-2 {
+        width: 125px;
+    }
+
+    #underline-3 {
+        width: 275px;
+    }
+
+    #underline-4 {
+        top: 40px;
+        width: 105px;
     }
 }
 
@@ -343,41 +431,65 @@ body {
     #first-sec {
         margin-top: 15vw;
     }
+
     .main-card {
         margin-top: 3rem;
     }
+
+    /*relative position of all model on background*/
     .square {
         width: 80vw;
         height: 80vw;
         top: -5% !important;
         right: -30% !important;
     }
-    
+
     .small {
         width: 55vw;
         height: 55vw;
         top: 72% !important;
         right: -0% !important;
     }
-    
+
     .medium {
         width: 40vw;
         height: 40vw;
         top: 32% !important;
         right: -30% !important;
     }
-    
+
     .circle {
         width: 55vw;
-        height: 55vw;  
+        height: 55vw;
     }
 
+    /*underline position*/
+
+    #underline-1 {
+        width: 215px;
+        bottom: 2px;
+        right: 150px;
+    }
+
+    #underline-2 {
+        width: 142px;
+    }
+
+    #underline-3 {
+        width: 315px;
+    }
+
+    #underline-4 {
+        top: 45px;
+        width: 120px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     #first-sec {
         margin-top: 15%;
     }
+
     .title {
         font-size: 3rem;
     }
@@ -385,12 +497,33 @@ body {
     #main-content {
         margin-top: 3vw !important;
     }
+
     @media screen and (max-height: 650px) {
         #first-sec {
             margin-top: 10%;
         }
     }
 
+    /*underline position*/
+
+    #underline-1 {
+        width: 160px;
+        bottom: 2px;
+        right: 60px;
+    }
+
+    #underline-2 {
+        width: 102px;
+    }
+
+    #underline-3 {
+        width: 235px;
+    }
+
+    #underline-4 {
+        top: 36px;
+        width: 90px;
+    }
 
 }
 
@@ -398,14 +531,36 @@ body {
     #first-sec {
         margin-top: 15%;
     }
-    
+
     @media screen and (max-height: 700px) {
         #first-sec {
             margin-top: 10%;
         }
     }
+
     #main-content {
         margin-top: 3.5vw !important;
+    }
+
+    /*underline position*/
+
+    #underline-1 {
+        width: 210px;
+        bottom: 2px;
+        right: 27px;
+    }
+
+    #underline-2 {
+        width: 143px;
+    }
+
+    #underline-3 {
+        width: 310px;
+    }
+
+    #underline-4 {
+        top: 47px;
+        width: 120px;
     }
 }
 
@@ -415,6 +570,7 @@ body {
             margin-top: 8%;
         }
     }
+
     #main-content {
         margin-top: 4.5vw !important;
     }
