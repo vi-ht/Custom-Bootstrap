@@ -259,6 +259,7 @@ main>section {
 .footer-option>div:hover, .footer-option>iconify-icon:hover{
     color:#198754;
     font-weight: bold;
+    cursor: pointer;
 }
 @media screen and (max-width: 567px) {
     #first-sec {
