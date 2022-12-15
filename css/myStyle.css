@@ -185,7 +185,17 @@ body {
     color: gray;
     left: 10px;
 }
-
+/*carousel*/
+.carousel-card{
+    border-radius: 1.5rem;
+}
+.blur-part:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+.blur-part{
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 /*Custom scrollbar*/
 /* width */
 ::-webkit-scrollbar {
@@ -246,7 +256,10 @@ body {
 main>section {
     margin-left: 6px;
 }
-
+.footer-option>div:hover, .footer-option>iconify-icon:hover{
+    color:#198754;
+    font-weight: bold;
+}
 @media screen and (max-width: 567px) {
     #first-sec {
         margin-top: 11vh;
@@ -277,6 +290,9 @@ main>section {
 
     #offcanvasExample {
         width: 73% !important;
+    }
+    .group-link {
+        line-height: 0.8rem;
     }
 
     /*relative position of all model on background*/
@@ -346,6 +362,9 @@ main>section {
     #underline-4 {
         top: 37px;
         width: 97px;
+    }
+    .group-link {
+        line-height: 0.8rem;
     }
 }
 
@@ -424,6 +443,10 @@ main>section {
     #underline-4 {
         top: 40px;
         width: 105px;
+    }
+
+    .group-link {
+        line-height: 0.8rem;
     }
 }
 
