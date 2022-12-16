@@ -273,7 +273,7 @@ main>section {
 }
 @media screen and (max-width: 567px) {
     #first-sec {
-        margin-top: 13vh;
+        margin-top: 12.5vh;
     }
     .content {
         font-size: 0.9rem;
@@ -284,7 +284,7 @@ main>section {
     }
 
     .title {
-        font-size: 2.8rem;
+        font-size: 2.7rem;
     }
 
     #inputPassword2, .full-btn {
@@ -357,7 +357,7 @@ main>section {
         width: 150px;
         height: 13px;
         bottom: 2px;
-        left: 200px;
+        left: 190px;
         height: 10px;
     }
 
@@ -381,7 +381,7 @@ main>section {
     }
     .banner-medium{
         width: 100%;
-        height: 335px;
+        height: 320px;
     }
     .banner-medium>img{
         object-position: 50% 50%;
