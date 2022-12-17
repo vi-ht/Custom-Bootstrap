@@ -203,7 +203,7 @@ body {
 
 #pre, #next {
     position: relative;
-    color: gray;
+    color: rgb(197, 196, 196);
 }
 
 /* #pre {
@@ -232,7 +232,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgba(37, 114, 81, 0.06)
+    background: rgba(28, 93, 65, 0.164)
 }
 
 /* Handle */
