@@ -89,7 +89,7 @@ button, #inputPassword2 {
     margin-left: -1rem;
 }
 
-.main-card, .navbar {
+.main-card, .navbar, #carousel-container>div>div {
     box-shadow: 4px 4px 4px 0 rgba(37, 114, 81, 0.06), 4px 6px 20px 0 rgba(37, 114, 81, 0.06);
 }
 
@@ -185,17 +185,44 @@ body {
     color: gray;
     left: 10px;
 }
+
 /*carousel*/
-.carousel-card{
+#carousel-container{
+    transition: all 1s ease-in-out;
+}
+.carousel-card {
     border-radius: 1.5rem;
 }
-.blur-part:hover{
+/* .btn-container{
+
+} */
+#pre:hover, #next:hover {
+    color: #198754;
+    transition: 0.2s
+}
+
+#pre, #next {
+    position: relative;
+    color: gray;
+}
+
+/* #pre {
+    left: 20px;
+} */
+
+#next {
+    right: -5px;
+}
+
+.blur-part:hover {
     background-color: rgba(0, 0, 0, 0);
 }
-.blur-part{
+
+.blur-part {
     transition: 0.7s;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 /*Custom scrollbar*/
 /* width */
 ::-webkit-scrollbar {
@@ -256,25 +283,30 @@ body {
 main>section {
     margin-left: 6px;
 }
-.footer-option>div:hover, .footer-option>iconify-icon:hover{
-    color:#198754;
+
+.footer-option>div:hover, .footer-option>iconify-icon:hover {
+    color: #198754;
     font-weight: bold;
     cursor: pointer;
 }
-.banner-medium{
+
+.banner-medium {
     width: 100%;
     height: 400px;
 }
-.banner-medium>img{
+
+.banner-medium>img {
     object-fit: cover;
     object-position: 100% 50%;
     width: 100%;
     height: 100%;
 }
+
 @media screen and (max-width: 567px) {
     #first-sec {
         margin-top: 12.5vh;
     }
+
     .content {
         font-size: 0.9rem;
     }
@@ -300,6 +332,7 @@ main>section {
     #offcanvasExample {
         width: 73% !important;
     }
+
     .group-link {
         line-height: 0.8rem;
     }
@@ -376,14 +409,17 @@ main>section {
         width: 88px;
         height: 10px;
     }
+
     .group-link {
         line-height: 0.8rem;
     }
-    .banner-medium{
+
+    .banner-medium {
         width: 100%;
         height: 320px;
     }
-    .banner-medium>img{
+
+    .banner-medium>img {
         object-position: 50% 50%;
     }
 }
@@ -468,11 +504,13 @@ main>section {
     .group-link {
         line-height: 0.8rem;
     }
-    .banner-medium{
+
+    .banner-medium {
         width: 100%;
         height: 370px;
     }
-    .banner-medium>img{
+
+    .banner-medium>img {
         object-position: 50% 50%;
     }
 }
