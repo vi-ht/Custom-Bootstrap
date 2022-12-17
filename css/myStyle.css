@@ -316,12 +316,13 @@ main>section {
     }
 
     .title {
-        font-size: 2.7rem;
+        font-size: 2.8rem;
     }
 
     #inputPassword2, .full-btn {
         padding: 10px !important;
         font-size: 0.9rem !important;
+
     }
 
     .full-btn {
@@ -373,7 +374,7 @@ main>section {
 
     /*padding of main card of page*/
     .mobile-div {
-        padding: 30px !important;
+        padding: 25px !important;
     }
 
     .mobile-div>p, #first-sec>div>form {
@@ -390,7 +391,7 @@ main>section {
         width: 150px;
         height: 13px;
         bottom: 2px;
-        left: 190px;
+        left: 0px;
         height: 10px;
     }
 
@@ -585,7 +586,10 @@ main>section {
     #main-content {
         margin-top: 3vw !important;
     }
-
+     /*padding of main card of page*/
+     .mobile-div {
+        padding: 30px !important;
+    }
     @media screen and (max-height: 650px) {
         #first-sec {
             margin-top: 10%;
