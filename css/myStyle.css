@@ -24,6 +24,12 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
+#first-page {
+    margin-top: 1.8rem;
+    width: 100vw;
+    height: 100vh;
+}
+
 .square {
     width: 55vw;
     height: 50vw;
@@ -187,12 +193,14 @@ body {
 }
 
 /*carousel*/
-#carousel-container{
+#carousel-container {
     transition: all 1s ease-in-out;
 }
+
 .carousel-card {
     border-radius: 1.5rem;
 }
+
 /* .btn-container{
 
 } */
@@ -275,12 +283,12 @@ body {
 }
 
 /*Responsive*/
-#first-sec {
+/* #first-sec {
     margin-top: 10%;
     margin-left: 6px;
-}
+} */
 
-main>section {
+main>section, #first-sec {
     margin-left: 6px;
 }
 
@@ -302,11 +310,18 @@ main>section {
     height: 100%;
 }
 
-@media screen and (max-width: 567px) {
-    #first-sec {
+@media screen and (max-width: 576px) {
+    /* #first-sec {
         margin-top: 12.5vh;
+    } */
+    #first-page {
+        margin-top: 5rem;
     }
-
+    @media screen and (max-width: 450px) {
+        #first-page {
+            margin-top: 3rem;
+        }
+    }
     .content {
         font-size: 0.9rem;
     }
@@ -430,10 +445,12 @@ main>section {
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    #first-sec {
+    /* #first-sec {
         margin-top: 14vw;
+    } */
+    #first-page {
+        margin-top: 7rem;
     }
-
     .main-card {
         margin-top: 3rem;
     }
@@ -521,10 +538,12 @@ main>section {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    #first-sec {
+    /* #first-sec {
         margin-top: 15vw;
+    } */
+    #first-page {
+        margin-top: 12rem;
     }
-
     .main-card {
         margin-top: 3rem;
     }
@@ -579,9 +598,9 @@ main>section {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    #first-sec {
+    /* #first-sec {
         margin-top: 15%;
-    }
+    } */
 
     .title {
         font-size: 3rem;
@@ -590,14 +609,16 @@ main>section {
     #main-content {
         margin-top: 3vw !important;
     }
-     /*padding of main card of page*/
-     .mobile-div {
+
+    /*padding of main card of page*/
+    .mobile-div {
         padding: 30px !important;
     }
+
     @media screen and (max-height: 650px) {
-        #first-sec {
+        /* #first-sec {
             margin-top: 10%;
-        }
+        } */
     }
 
     /*underline position*/
@@ -624,14 +645,14 @@ main>section {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-    #first-sec {
+    /* #first-sec {
         margin-top: 15%;
-    }
+    } */
 
     @media screen and (max-height: 700px) {
-        #first-sec {
+        /* #first-sec {
             margin-top: 10%;
-        }
+        } */
     }
 
     #main-content {
@@ -662,9 +683,9 @@ main>section {
 
 @media screen and (min-width: 1400px) and (max-width: 1500px) {
     @media screen and (max-height: 700px) {
-        #first-sec {
+        /* #first-sec {
             margin-top: 8%;
-        }
+        } */
     }
 
     #main-content {

@@ -31,7 +31,7 @@
 </head>
 
 <body class="position-relative">
-    <header>
+    <header class="container-lg">
         <nav class="navbar fixed-top navbar-expand-sm bg-white d-none d-md-block">
             <div class="container-lg">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -131,13 +131,8 @@
             </div>
         </div>
     </header> <!--End header-->
-    <main class="container">
-        <div class="square position-absolute end--10 top--10"></div>
-        <div class="circle position-absolute start--20 top-25"></div>
-        <div class="circle bottom position-absolute start-15 top-50"></div>
-        <div class="square medium position-absolute end--15 top-30"></div>
-        <div class="square small position-absolute start-45 top-75"></div>
-        <section class="container-fluid row w-100 h-100" id="first-sec">
+    <section class="container d-flex flex-row align-items-center justify-content-center" id="first-page">
+        <section class="container-fluid row" id="first-sec">
             <div class="col-12 col-lg-6" id="main-content">
                 <p class="text-bg-vi w-100 title lh-1 w-90">Think positive</p>
                 <div class="position-relative">
@@ -162,12 +157,19 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-6" id="main-background"><img class="w-100 main-card"
-                    src="asset/banner/imageView.png">
+            <div class="col-12 col-lg-6" id="main-background"><img class="w-100 main-card" src="asset/banner/imageView.png">
             </div>
         </section>
-        <section class="container-fluid row mt-3" id="plant-a-tree">
-            <div class="col-12 col-lg-8 mt-55 bg-white rounded p-5 main-card mobile-div">
+    </section>
+    <main class="container">
+        <div class="square position-absolute end--10 top--10"></div>
+        <div class="circle position-absolute start--20 top-25"></div>
+        <div class="circle bottom position-absolute start-15 top-50"></div>
+        <div class="square medium position-absolute end--15 top-30"></div>
+        <div class="square small position-absolute start-45 top-75"></div>
+
+        <section class="container-fluid row mt-1" id="plant-a-tree">
+            <div class="col-12 col-lg-8 mt-4 bg-white rounded p-5 main-card mobile-div">
                 <div class="position-relative">
                     <p class="text-bg-vi w-100 title lh-1 position-relative text">Plant a tree</p>
                     <div id="underline-2" class="underline"></div>
